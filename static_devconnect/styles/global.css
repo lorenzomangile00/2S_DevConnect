@@ -9,9 +9,10 @@
     --cor-preto: #000000;
     --cor-verde-claro: #E0FA9C;
     --cor-vermelho: #961A00;
+    --cor-verde-claro2: #B6CB80; 
 
     --borda: 1px solid var(--cor-cinza3);
-    --borda-arredondada: 2px;
+    --borda-arredondada: 3px;
 
     --tamanho-fonte-lg: 20px;
     --tamanho-fonte-md: 16px;
@@ -56,5 +57,29 @@ input{
     width: 100%;
     height: 35px;
     border: var(--borda);
-    background-color: var(--cor-cinza2);
+    background-color: var(--cor-verde-claro2);
+}
+
+.formulario-botao-verde{
+    background-color: var(--cor-verde-medio);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+.formulario-botao-cinza{
+    background-color: var(--cor-cinza3);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
 }
