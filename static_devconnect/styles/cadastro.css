@@ -35,7 +35,7 @@ form>label{
     flex-direction: column;
     align-items: center;
     padding: 3%;
-    gap: 15px;
+    gap: 10px;
     background-color: var(--cor-cinza2);
     border-radius: 15px;
 }
