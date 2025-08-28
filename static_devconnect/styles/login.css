@@ -42,10 +42,7 @@ main>div {
 }
 
 .estilo-formulario {
-    border: var(--borda);
-    width: 100%;
     max-width: 340px;
-    background-color: var(--cor-cinza1);
 }
 
 #formulario>div {
@@ -62,6 +59,19 @@ main>div {
     margin-top: 4px;
 
 }
+
+.formulario-botao-verde{
+    background-color: var(--cor-verde-medio);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
 
 .formulario-botao-verde {
     width: 100%;
@@ -102,4 +112,8 @@ main>div {
     height: 39px;
     display: flex;
     justify-content: center;
+}
+
+#formulario>p>a,#secao-cadastro>p>a:hover{
+    color: #440C00;
 }

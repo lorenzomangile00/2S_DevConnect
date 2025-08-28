@@ -1,0 +1,113 @@
+main{
+    /*background-color: darkcyan;*/
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-flex-publi{
+    background-color: blue;
+    width: 90%;
+    height: 700px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#storys{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+
+#storys::-webkit-scrollbar{
+    width: 0;
+}
+
+.card-story{
+    width: 100%;
+    max-width: 100px;
+    /*background-color: coral;*/
+}
+
+.card-story > a{
+    /*background-color: crimson;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.card-story > a > img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-story > a > span{
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    text-transform: lowercase;
+}
+
+.file-upload {
+    display: inline-block;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-cinza3); /* cinza do botão */
+    color: var(--cor-cinza1);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.file-postar{
+    display: inline-block;
+    padding: 6px 12px;   /* deixei menor */
+    background-color: var(--cor-verde-medio); /* cinza do botão */
+    color: var(--cor-cinza1);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/*seção criar publicação*/
+#cadastro-publi{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3%;
+}
+
+#cadastro-publi > h2{
+    font-size: var(--tamanho-fonte-lg);
+    color: var(--cor-preto);
+    font-weight: 800;
+}
+
+#cadastro-publi > form{
+    /*background-color: aqua;*/
+    width: 100%;
+}
+
+#cadastro-publi > form > textarea{
+    width: 100% !important;
+    height: 80px !important;
+    background-color: var(--cor-cinza2);
+    resize: none;
+    padding: 10px;
+    color: var(--cor-cinza3);
+    font-size: var(--tamanho-fonte-sm);
+}

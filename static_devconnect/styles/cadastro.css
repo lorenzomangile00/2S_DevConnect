@@ -76,6 +76,31 @@ form>label{
     width: 100%;
 }
 
+.formulario-botao-verde{
+    background-color: var(--cor-verde-medio);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+
+.formulario-botao-cinza{
+    background-color: var(--cor-cinza3);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
 #formulario>p {
     text-transform: none;
     font-size: var(--tamanho-fonte-sm);
