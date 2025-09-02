@@ -51,7 +51,7 @@ main>div {
 
 #formulario>div>label {
     font-size: var(--tamanho-fonte-sm);
-    color: #6a6a6a;
+    color: var(--cor-verde-escuro);
     font-weight: 500;
 }
 

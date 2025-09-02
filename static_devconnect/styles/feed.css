@@ -9,9 +9,8 @@ main{
 }
 
 .container-flex-publi{
-    background-color: blue;
+    background-color: green;
     width: 90%;
-    height: 700px;
     max-width: 900px;
     display: flex;
     flex-direction: column;
@@ -61,8 +60,9 @@ main{
     text-transform: lowercase;
 }
 
-.file-upload {
+.formulario-botao-cinza {
     display: inline-block;
+    align-items: flex-end;
     padding: 6px 12px;   /* deixei menor */
     background-color: var(--cor-cinza3); /* cinza do botão */
     color: var(--cor-cinza1);
@@ -72,10 +72,10 @@ main{
     font-size: 14px;
 }
 
-.file-postar{
+.formulario-botao-verde{
     display: inline-block;
     padding: 6px 12px;   /* deixei menor */
-    background-color: var(--cor-verde-medio); /* cinza do botão */
+    background-color: var(--cor-verde-medio);
     color: var(--cor-cinza1);
     cursor: pointer;
     border-radius: 5px;
@@ -110,4 +110,116 @@ main{
     padding: 10px;
     color: var(--cor-cinza3);
     font-size: var(--tamanho-fonte-sm);
+    border: var(--borda);
+    
+}
+
+#cadastro-publi > form > textarea::placeholder{
+    color: var(--cor-verde-claro3);
+}
+
+h2{
+    font-family: "Rozha One";
+    color: var(--cor-verde-escuro2);
+}
+
+#cadastro-publi > form > footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.formulario-botao-verde{
+    width: 100%;
+    max-width: 135px;
+}
+
+/*secao publicacoes*/
+#publicacoes{
+    background-color: blueviolet;
+    width: 100%;
+    height: 600px;
+}
+
+.card-publi{
+    width: 100%;
+    height: 400px;
+    background-color: var(--cor-cinza1);
+}
+
+.card-publi > header{
+    /*height: 80px;*/
+    background-color: var(--cor-cinza1);
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+.card-publi > header > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-publi > figure{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-publicacao{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 420px;
+}
+
+.descricao-publicacao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    padding: 0 3%;
+    /*order: 2;*/
+}
+
+.descricao-publicacao > p{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+}
+
+.interacoes-publicacao{
+    background-color: brown;
+    width: 87px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    order: 1;
+    margin: 15px 3%;
+}
+
+.interacoes-publicacao > button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.interacoes-publicacao > button > img{
+    width: 35px;
+}
+
+.card-publi > button{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 700;
+    color: var(--cor-verde-medio);
+    margin: 15px 3%;
 }
