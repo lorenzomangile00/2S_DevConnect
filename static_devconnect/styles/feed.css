@@ -186,7 +186,7 @@ h2{
     font-weight: 500;
     padding: 0 3%;
     /*order: 2;*/
-    flex-wrap: wrap;
+    flex: auto;
 }
 
 .descricao-publicacao > p{

@@ -1,0 +1,82 @@
+main{
+    
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+.perfil-container{
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    min-height: 300px;
+    align-items: center;
+    background-color: blue;
+    padding: 0 20px;
+}
+
+#dados-perfil{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-picture{
+    display: flex;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 110px;
+    width: 100%;
+
+}
+
+.informacoes-perfil{
+    background-color: blueviolet;
+    width: 325px;
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+span.username{
+    width: 100%;
+    background-color: cadetblue;
+    
+}
+
+.editar-perfil{
+    color: var(--cor-verde-medio);
+    text-decoration: none;
+}
+
+.sair{
+    color: var(--cor-vermelho);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 495px){
+    .informacoes-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+    .username{
+        text-align: center;
+    }
+}
+
+.informacoes-perfil > button{
+    background-color: transparent;
+    gap: 20px;
+    border: none;
+}
