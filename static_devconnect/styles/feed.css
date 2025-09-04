@@ -9,7 +9,6 @@ main{
 }
 
 .container-flex-publi{
-    background-color: green;
     width: 90%;
     max-width: 900px;
     display: flex;
@@ -139,15 +138,14 @@ h2{
 
 /*secao publicacoes*/
 #publicacoes{
-    background-color: blueviolet;
     width: 100%;
     height: 600px;
 }
 
 .card-publi{
     width: 100%;
-    height: 400px;
     background-color: var(--cor-cinza1);
+    border: var(--borda);
 }
 
 .card-publi > header{
@@ -169,7 +167,6 @@ h2{
 
 .card-publi > figure{
     width: 100%;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
 }
@@ -197,7 +194,6 @@ h2{
 }
 
 .interacoes-publicacao{
-    background-color: brown;
     width: 87px;
     display: flex;
     justify-content: space-between;
@@ -219,7 +215,9 @@ h2{
 
 .card-publi > button{
     font-size: var(--tamanho-fonte-sm);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--cor-verde-medio);
     margin: 15px 3%;
+    background-color: transparent;
+    border: none;
 }
