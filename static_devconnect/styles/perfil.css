@@ -54,7 +54,7 @@ main{
 span.username{
     width: 100%;
     /*background-color: cadetblue;*/
-    
+    font-weight: bold;
 }
 
 .editar-perfil{
@@ -139,6 +139,10 @@ span.username{
   .post-texto {
     margin-bottom: 10px;
     line-height: 1.4;
+  }
+
+  .post-topo > p {
+    font-weight: bold;
   }
   
   .post-acoes {
