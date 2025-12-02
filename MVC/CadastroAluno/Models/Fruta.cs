@@ -4,10 +4,10 @@ namespace CadastroAluno.Models
 {
     public class Fruta
     {
-       public int Id;
-       public string Nome;
-       public string Cor;
+       public int Id {get; set; }
+       public string Nome { get; set; }
+       public string Cor {get; set; }
     
-       public string Categoria;
+       public string Categoria{ get; set; }
     }
 }

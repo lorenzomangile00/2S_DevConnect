@@ -1,0 +1,17 @@
+@model List<CadastroAluno.Models.Aluno>
+@using CadastroAluno.Controllers
+
+<h1>Pagina de Alunos</h1>
+
+<h2>Lista de Alunos</h2>
+
+@foreach( var alunos in Model){
+    <p>
+        Nome do Aluno : @alunos.NomeAluno ,
+        Idade : @alunos.Idade ,
+        Curso : @alunos.Curso ,
+        Turma : @alunos.Turma ,
+
+    </p>
+    
+}

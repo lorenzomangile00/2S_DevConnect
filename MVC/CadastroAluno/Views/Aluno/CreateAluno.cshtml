@@ -1,0 +1,22 @@
+@*Importa o model do aluno*@
+@model CadastroAluno.Models.Aluno
+
+<h1>Cadastro de Aluno</h1>
+
+@*Criar o formulario de cadastro da fruta*@
+<form asp-action="CreateAluno" method = "post">
+     <label>Nome do Aluno:</label>
+     <input asp-for="NomeAluno" class="form-control" />
+    <br />
+    <label>Idade</label>
+    <input asp-for="Idade" class="form-control"  />
+    <br />
+    <label>Curso:</label>
+    <input asp-for="Curso" class="form-control" />
+    <br />
+    <label>Turma:</label>
+    <input asp-for="Turma" class="form-control" />
+    <br />
+
+    <button class= "btn btn-success">Salvar</button>
+</form>

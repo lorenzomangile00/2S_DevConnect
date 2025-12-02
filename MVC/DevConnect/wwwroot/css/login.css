@@ -1,0 +1,119 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    /*Altura da janela do meu dispositivo*/
+    background-color: var(--cor-cinza1);
+    display: flex;
+    align-items: center;
+    /*alinha no sentido ao contrario do flex*/
+    justify-content: center;
+    /*alinha no sentido do flex*/
+}
+
+main>div {
+    width: 90%;
+    /*height: 500px;*/
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* formulario */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 25px;
+    background-color: var(--cor-cinza2);
+    border-radius: 15px;
+}
+
+#secao-cadastro {
+    /*width: 100px;*/
+    height: 60px;
+    display: flex;
+    /*Por padrão */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-cinza2);
+    border-radius: 15px;
+}
+
+.estilo-formulario {
+    max-width: 340px;
+}
+
+#formulario>div {
+    width: 100%;
+}
+
+#formulario>div>label {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-verde-escuro);
+    font-weight: 500;
+}
+
+#formulario>div>input{
+    margin-top: 4px;
+
+}
+
+.formulario-botao-verde{
+    background-color: var(--cor-verde-medio);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+
+.formulario-botao-verde {
+    width: 100%;
+}
+
+#formulario>p {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+}
+
+#formulario>a,
+#secao-cadastro>p>a {
+    text-decoration: none;
+    color: var(--cor-vermelho);
+}
+
+#secao-cadastro>p {
+    font-size: var(--tamanho-fonte-md);
+}
+
+.informacao-aplicativo {
+    background-color: var(--borda);
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+    font-weight: 400;
+}
+
+#secao-instalacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#secao-instalacao img {
+    width: 120px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario>p>a,#secao-cadastro>p>a:hover{
+    color: #440C00;
+}

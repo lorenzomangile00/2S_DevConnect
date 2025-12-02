@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\53101823811\\Desktop\\back-end\\MVC\\CadastroAluno\\CadastroAluno.csproj",
+      "projectUniqueName": "C:\\Users\\53101823811\\Desktop\\2S_DevConnect\\MVC\\CadastroAluno\\CadastroAluno.csproj",
       "projectName": "CadastroAluno",
-      "projectPath": "C:\\Users\\53101823811\\Desktop\\back-end\\MVC\\CadastroAluno\\CadastroAluno.csproj",
+      "projectPath": "C:\\Users\\53101823811\\Desktop\\2S_DevConnect\\MVC\\CadastroAluno\\CadastroAluno.csproj",
       "packagesPath": "C:\\Users\\53101823811\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\53101823811\\Desktop\\back-end\\MVC\\CadastroAluno\\obj\\",
+      "outputPath": "C:\\Users\\53101823811\\Desktop\\2S_DevConnect\\MVC\\CadastroAluno\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\53101823811\\AppData\\Roaming\\NuGet\\NuGet.Config"

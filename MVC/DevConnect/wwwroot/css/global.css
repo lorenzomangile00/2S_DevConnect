@@ -1,0 +1,171 @@
+
+
+:root{
+    --cor-verde-escuro: #003900;
+    --cor-verde-medio: #7FB500;
+    --cor-cinza1: #E8EBEB;
+    --cor-cinza2: #D7D7D7;
+    --cor-cinza3: #7E7E7E;
+    --cor-cinza4: #E0E0E0;
+    --cor-preto: #000000;
+    --cor-verde-claro: #E0FA9C;
+    --cor-vermelho: #961A00;
+    --cor-verde-claro2: #B6CB80; 
+    --cor-verde-claro3: #F6FFDF;
+    --cor-verde-escuro2: #001D00;
+
+    --borda: 2px solid var(--cor-cinza4);
+    --borda-arredondada: 3px;
+
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(..//fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap),
+    url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face{
+    font-family: Rozha One;
+    src: url(../fonts/Rozha_One/RozhaOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: Sedan SC;
+    src: url(../fonts/Sedan_SC/SedanSC-Regular.ttf);
+}
+
+/*SELETOR GLOBAL*/
+*{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*o valor total do tamanho do elemento conta tanto com espacos internos ou ate mesmo a borda*/
+    outline-color: var(--cor-vermelho);
+}
+
+.formulario-botao-verde{
+    background-color: var(--cor-verde-medio);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+
+.formulario-botao-cinza{
+    background-color: var(--cor-cinza3);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+
+    color: var(--cor-cinza1);
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+}
+
+body{
+    background-color: var(--cor-cinza1);
+}
+
+h1{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+/* formulario */
+.estilo-formulario {
+    border: var(--borda);
+    width: 100%;
+    background-color: var(--cor-cinza1);
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    border: var(--borda);
+    background-color: var(--cor-verde-claro2);
+}
+
+
+
+#campo-upload{
+    display: none;
+}
+
+#texto-upload{
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    min-height: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: var(--cor-cinza3);
+    color: var(--cor-cinza2);
+    text-align: center;
+    font-weight: 600;
+    border-radius: var(--borda-arredondada);
+}
+
+/*cabeçalho*/
+#cabecalho{
+    width: 100%;
+    height: 80px;
+    background-color: var(--cor-cinza1);
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    border-bottom: var(--borda);
+}
+
+#cabecalho > nav{
+    width: 85%;
+    max-width: 1440px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-acoes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-mobile{
+    display: none; 
+}
+
+.cabecalho-acoes > a{
+    display: flex;
+    align-items: center;
+}
+
+.foto-perfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;/*redimensiona a foto*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+/*responsivo*/
+@media only screen and (max-width: 486px) {
+    #logo-mobile {
+        display: initial;
+    }
+
+    #logo-desktop {
+        display: none;
+    }
+}
