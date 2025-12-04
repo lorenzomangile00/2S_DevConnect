@@ -1,7 +1,14 @@
+using CadastroAluno.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+// builder.Services.AddDbContext<CadastroAlunoContext>(options =>
+// options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+
 builder.Services.AddControllersWithViews();
+// Add services to the container.
+builder.Services.AddDbContext<CadastroAlunoContext>();
 
 var app = builder.Build();
 

@@ -1,7 +1,12 @@
+using DevConnect.Models;
+using DevConnect.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<db_devconnectContext>();
 
 var app = builder.Build();
 

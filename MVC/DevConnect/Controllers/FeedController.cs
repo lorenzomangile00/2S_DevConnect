@@ -1,4 +1,5 @@
 
+using DevConnect.Models;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -7,16 +8,13 @@ namespace DevConnect.Controllers
    
     public class FeedController : Controller
     {
+        private readonly db_devconnectContext _context;
+        
         private readonly ILogger<FeedController> _logger;
 
         public FeedController(ILogger<FeedController> logger)
         {
             _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

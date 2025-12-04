@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using CadastroAluno.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace CadastroAluno.Controllers
@@ -8,25 +9,31 @@ namespace CadastroAluno.Controllers
     
     public class AlunoController : Controller
     {
+
+         private readonly CadastroAlunoContext _context;
         private readonly ILogger<AlunoController> _logger;
 
-        public AlunoController(ILogger<AlunoController> logger)
+        public AlunoController(ILogger<AlunoController> logger, CadastroAlunoContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
-        private static List<Aluno> alunos = new List<Aluno>
-        {
-            new CadastroAluno.Models.Aluno{ NomeAluno = "Lorenzo", Idade = 17, Curso = "DEV", Turma = 1},
-            new CadastroAluno.Models.Aluno{ NomeAluno = "Figueira", Idade = 18, Curso = "DEV", Turma = 2},
-            new CadastroAluno.Models.Aluno{ NomeAluno = "LaHacker", Idade = 17, Curso = "Multimidia", Turma = 1},
-            new CadastroAluno.Models.Aluno{ NomeAluno = "G.A", Idade = 16, Curso = "ADM", Turma = 2},
-            new CadastroAluno.Models.Aluno{ NomeAluno = "Hugo", Idade = 18, Curso = "ADM", Turma = 1},
-        };
 
 
-        public IActionResult IndexAluno()
+        // private static List<Aluno> alunos = new List<Aluno>
+        // {
+        //     new CadastroAluno.Models.Aluno{ NomeAluno = "Lorenzo", Idade = 17, Curso = "DEV", Turma = 1},
+        //     new CadastroAluno.Models.Aluno{ NomeAluno = "Figueira", Idade = 18, Curso = "DEV", Turma = 2},
+        //     new CadastroAluno.Models.Aluno{ NomeAluno = "LaHacker", Idade = 17, Curso = "Multimidia", Turma = 1},
+        //     new CadastroAluno.Models.Aluno{ NomeAluno = "G.A", Idade = 16, Curso = "ADM", Turma = 2},
+        //     new CadastroAluno.Models.Aluno{ NomeAluno = "Hugo", Idade = 18, Curso = "ADM", Turma = 1},
+        // };
+
+
+        public async Task<IActionResult> IndexAluno()
         {
+            var alunos = await _context.Alunos.ToListAsync();
             return View(alunos);
         }
 
@@ -46,8 +53,8 @@ namespace CadastroAluno.Controllers
 
         public IActionResult CreateAluno(Aluno aluno)
         {
-            aluno.NomeAluno = alunos.Max(a => a.NomeAluno) + 1;
-            alunos.Add(aluno);
+            // aluno.NomeAluno = alunos.Max(a => a.NomeAluno) + 1;
+            // alunos.Add(aluno);
             return RedirectToAction("Index");
         }
 
