@@ -25,8 +25,8 @@ public partial class TbPostagem
     public DateOnly DataPostagem { get; set; }
 
     [Column("id_usuario")]
-    public int IdUsuario { get; set; }
+    public int? IdUsuario { get; set; }
 
     [InverseProperty("IdPostagemNavigation")]
-    public virtual ICollection<TbComentario> TbComentarios { get; set; } = new List<TbComentario>();
+    public virtual ICollection<TbComentario> TbComentario { get; set; } = new List<TbComentario>();
 }

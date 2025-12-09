@@ -8,9 +8,14 @@ namespace DevConnect.Controllers
    
     public class FeedController : Controller
     {
-        private readonly db_devconnectContext _context;
+        
         
         private readonly ILogger<FeedController> _logger;
+
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         public FeedController(ILogger<FeedController> logger)
         {

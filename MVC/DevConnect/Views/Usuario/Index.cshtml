@@ -1,38 +1,50 @@
+@model DevConnect.Models.TbUsuario;
+
 <h1>Tela cadastro</h1>
 
 <link rel="stylesheet" href="~/css/cadastro.css" />
+
+<script defer>
+    const UsuarioNovoCadastro = "@ViewBag.UsuarioNovoCadastro";
+
+    if(UsuarioNovoCadastro == "Nao cadastrado"){
+        alert("Usuário não cadastrado. Tente novamente.");
+    }
+        
+</script>
 
 
         <main>
             <div>
                 <!-- formulario -->
-                <form id="formulario" class="estilo-formulario">
+                <form id="formulario" class="estilo-formulario" enctype="multipart/form-data" asp-action="Index" asp-controller="Usuario">
                     <img src="../images/logotipo_mobile.svg" alt="">
 
                     <p>Cadastre-se para comunidade exclusiva de desenvolvedores</p>
 
                     <div>
                         <label for="">Nome e sobrenome</label>
-                        <input type="text" name="" id="">
+                        <input type="text" asp-for=NomeCompleto>
                     </div>
                     
                     <div>
                         <label for="">Nome de usuário </label>
-                        <input type="text" name="" id="">
+                        <input type="text" asp-for=NomeUsuario>
                     </div>
 
 
                     <div>
                         <label for="">Email</label>
-                        <input type="email" name="" id="">
+                        <input type="email" asp-for="Email">
                     </div>
 
                     <div>
                         <label for=""> Senha </label>
-                        <input type="password" name="" id="">
+                        <input type="password" asp-for="Senha">
                     </div>
 
-                    <button type="submit" class="formulario-botao-cinza">Faça o upload da sua imagem</button>
+                    <label for="arquivo" class="formulario-botao-cinza">Faça o upload da sua imagem</label input type="file" id="arquivo" name="imagem">
+                    <input type="file" id="arquivo" name="imagem">
 
                     <button type="submit" class="formulario-botao-verde">Cadastrar-se</button>
 

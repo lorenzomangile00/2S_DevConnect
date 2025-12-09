@@ -192,7 +192,6 @@ C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\refin
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.pdb
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.genruntimeconfig.cache
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\ref\DevConnect.dll
-C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\b2vcruk2pz-14hj8hu2gu.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\0kxwy11tb8-1n0auc0c6q.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\frhfzpwm7k-zw6y2wx57k.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\qv30lqxixm-z7smzq3hue.gz
@@ -223,7 +222,6 @@ C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compr
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\rykgn1yvfg-himz5psb3p.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\3o3b6enb41-rp89upc22z.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\vlinrkfmos-aikqi3r9c2.gz
-C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\i0qwtwsqw9-dex86ns4x0.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\rraduc47yt-3imwokybmn.gz
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\bin\Debug\net9.0\Azure.Identity.dll
@@ -348,3 +346,5 @@ C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\bin\Debug\net9.0\runti
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.csproj.AssemblyReference.cache
 C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\DevConnect.csproj.Up2Date
+C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\i0qwtwsqw9-3tu36jjvrg.gz
+C:\Users\53101823811\Desktop\2S_DevConnect\MVC\DevConnect\obj\Debug\net9.0\compressed\b2vcruk2pz-jcrhfbut46.gz

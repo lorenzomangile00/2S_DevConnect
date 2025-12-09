@@ -8,7 +8,8 @@ namespace DevConnect.Models;
 
 [PrimaryKey("IdUsuario", "IdPostagem")]
 [Table("tb_curtida")]
-public partial class TbCurtidum
+[Index("IdUsuario", "IdPostagem", Name = "UQ__tb_curti__D3BA5D9AC2DBD4FF", IsUnique = true)]
+public partial class TbCurtida
 {
     [Key]
     [Column("id_usuario")]

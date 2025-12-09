@@ -64,7 +64,8 @@
     border-radius: var(--borda-arredondada);
     border: none;
     height: 35px;
-
+    display: grid;
+    align-items: center;
     color: var(--cor-cinza1);
     width: 100%;
     font-size: var(--tamanho-fonte-sm);
