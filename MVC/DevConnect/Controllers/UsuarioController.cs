@@ -79,6 +79,7 @@ namespace DevConnect.Controllers
 
                 return RedirectToAction("Index", "Home");
             }
+            
             catch (System.Exception)
             {
                 ViewBag.UsuarioNovoCadastro = "Nao cadastrado";

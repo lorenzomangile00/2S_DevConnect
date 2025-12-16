@@ -38,6 +38,12 @@ public partial class TbUsuario
     [InverseProperty("IdUsuarioNavigation")]
     public virtual ICollection<TbComentario> TbComentario { get; set; } = new List<TbComentario>();
 
+    [InverseProperty("IdUsuarioNavigation")]
+    public virtual ICollection<TbCurtida> TbCurtida { get; set; } = new List<TbCurtida>();
+
+    [InverseProperty("IdUsuarioNavigation")]
+    public virtual ICollection<TbPostagem> TbPostagem { get; set; } = new List<TbPostagem>();
+
     [ForeignKey("IdUsuarioSeguir")]
     [InverseProperty("IdUsuarioSeguir")]
     public virtual ICollection<TbUsuario> IdUsuarioSeguido { get; set; } = new List<TbUsuario>();
